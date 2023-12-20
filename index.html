@@ -11,22 +11,21 @@
             padding: 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
             background-color: #f4f4f4;
         }
         .container {
-            width: 80%;
-            max-width: 1200px;
+            width: 100%; /* Take up full width */
+            max-width: 1200px; /* Max width to control layout on larger screens */
             margin: auto;
-            overflow: hidden;
             display: flex;
-            justify-content: space-between;
+            flex-direction: column; /* Stack sections vertically */
+            align-items: center; /* Align sections for smaller screens */
         }
         .section {
-            width: 45%;
+            width: 90%; /* Adjust width to your preference */
             padding: 20px;
             box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+            margin-bottom: 20px; /* Add some space between the sections */
         }
         .left-section {
             background-color: #f9e4b7;
@@ -59,6 +58,7 @@
             <h3>Assignments:</h3>
             <ul>
                 <li><a href="https://alexjinho.github.io/alexjinho/process%20drawing.pdf" target="_blank">Process Drawing</a></li>
+                <!-- Add more assignment links here -->
             </ul>
         </div>
     </div>
